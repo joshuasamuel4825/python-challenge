@@ -16,7 +16,7 @@ output_path = os.path.join('analysis','output.txt')
 with open(path) as csvfile:
     csvreader = csv.reader(csvfile, delimiter =",")
 #remove header of file
-    next(csvreader)
+    csvheader= next(csvreader)
 
 #loop to go through file
     for line in csvreader:
